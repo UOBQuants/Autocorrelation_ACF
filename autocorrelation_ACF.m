@@ -1,3 +1,7 @@
+%This script reads the adjusted prices on the csv; 
+%plots the autocorrelation of simple returns, compound returns, simple squared returns and compound squared returns 
+%and computes the Ljung-Box Q-Test for each of them.
+
 clear
 m = csvread('prices5y.csv', 1, 5, [1 5 1258 5])';   %take prices from csv
 for i=2:(length(m))
